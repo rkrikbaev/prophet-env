@@ -22,7 +22,7 @@ RUN cd prophet-${PROPHET_VER}/python && \
     pip install -r requirements.txt && \
     python setup.py install
 
-COPY ./pyinstaller/hooks /pyinstaller-${PYINSTALLER_VER}/PyInstaller/hooks
+COPY ./hooks /pyinstaller-${PYINSTALLER_VER}/PyInstaller/hooks
 RUN cd pyinstaller-${PYINSTALLER_VER} && \
     python setup.py install
 
