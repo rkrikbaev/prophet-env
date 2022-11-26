@@ -1,2 +1,2 @@
 compile:
-	docker build -t rkrikbaev/prophet-env:latest .
+	docker build -t rkrikbaev/prophet-env:latest --push .
