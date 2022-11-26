@@ -26,9 +26,5 @@ COPY ./hooks /pyinstaller-${PYINSTALLER_VER}/PyInstaller/hooks
 RUN cd pyinstaller-${PYINSTALLER_VER} && \
     python setup.py install
 
-# # external dependences if needed
-# COPY requirements.txt ./
-# RUN pip install -r requirements.txt
-
 RUN mkdir application
 WORKDIR /application
